@@ -2,14 +2,15 @@
 
 int main(void)
 {
+	// Declaração das Variáveis
 	int historicoFamiliarPressaoAlta = -1;
 	int sobrePeso = -1;
 	int sedentario = -1;
 	int consumeAlcoolCigarro = -1; 
 	int estresse = -1; 
-    int idadeAvancada = -1; 
+	int idadeAvancada = -1; 
 	int alimentacaoRuim = -1;
-    int riscoTotal = 0;
+	int riscoTotal = 0;
 
 	// Fonte: https://omronbrasil.com/fatores-de-risco-hipertensao
     printf("================================================================\n");
@@ -18,6 +19,7 @@ int main(void)
     
 	printf(">> Responda com 1 (Sim) ou 0 (Nao) as 5 perguntas abaixo:\n\n");
 
+	// Coleta das Respostas das Perguntas
     printf("1. Possui alguem na familia com historico de pressao alta? ");
     scanf("%d", &historicoFamiliarPressaoAlta);
 
@@ -39,6 +41,7 @@ int main(void)
     printf("7. Costuma comer alimentos muito salgados ou frituras, por exemplo? ");
     scanf("%d", &alimentacaoRuim);
 
+	// Validação das Respostas das Perguntas
 	if (historicoFamiliarPressaoAlta != 0 && historicoFamiliarPressaoAlta != 1) {
 		printf("\nResposta invalida para pergunta: [1. Possui alguem na familia com historico de pressao alta?]\n");
 		printf("Resposta informada: %d\n", historicoFamiliarPressaoAlta);
@@ -62,12 +65,14 @@ int main(void)
 		printf("Resposta informada: %d\n", alimentacaoRuim);
 	} else {
 		
+		// Cálculo do Risco Total dos Fatores de Risco
 		riscoTotal = idadeAvancada + historicoFamiliarPressaoAlta + sobrePeso + sedentario + alimentacaoRuim;
 
 	    printf("\n=================");
 	    printf("\n::: RESULTADO :::");
 	    printf("\n=================\n");
 	
+		// Avaliação dos Fatores de Risco
 	    if (riscoTotal >= 4) {
 	        printf("ALTO RISCO. Cuidado para nao desenvolver ou agravar a hipertensao!\n");
 	        printf("Recomendacoes: procure uma unidade de saude, mude seus habitos e monitore sua pressao arterial.\n");
