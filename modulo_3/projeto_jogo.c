@@ -42,7 +42,7 @@ int main(void)
 		tentativas = -1;		
 
     	printf("=============================================================\n");
-    	printf("::: PORTA DOS DESESPERADOS - Homenagem ao Sergio Malandro :::\n");
+    	printf("::: PORTA DOS DESESPERADOS: Homenagem ao Sergio Mallandro :::\n");
     	printf("=============================================================\n");
 
     	printf("\n");
