@@ -87,7 +87,7 @@ int main(void)
 		// Realiza a(s) tentantiva(s)
 		for(int i = 1; i <= tentativas; i++) {
 			
-			// Ontem a porta para a tentativa
+			// Obtem a porta para a tentativa
 			do {
 				printf("\n");
 			    printf(">>> [Tentativa %d de %d]: Escolha uma das portas [1 a %d]: ", i, tentativas, QUANTIDADE_PORTA);
