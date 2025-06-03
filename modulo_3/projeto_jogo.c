@@ -17,13 +17,10 @@
 #define NAO 0
 #define CHAR_FLUSH_SCANF '\n'
 
-// Referências:
-// https://pt.wikipedia.org/wiki/S%C3%A9rgio_Mallandro
-// https://noticiasdatv.uol.com.br/noticia/filmes-na-tv/diretor-abre-a-porta-dos-desesperados-para-contar-historia-de-sergio-mallandro-111888
-// https://www.youtube.com/watch?v=zotSjxA0r0s
+// Referencia: https://pt.wikipedia.org/wiki/S%C3%A9rgio_Mallandro
 int main(void)
 {
-	// Declaração das Variáveis
+	// Declaracao das Variaveis
 	int nivel;
 	int continuar;
 	int portaPremio;
@@ -34,7 +31,7 @@ int main(void)
 		// Limpa a tela do Console/Prompt do Windows
 		system("cls");
 
-		// Inicializando as variaveis
+		// Inicializacao das variaveis
 		nivel = -1;
 		continuar = -1;
 		portaPremio = -1;
@@ -68,7 +65,7 @@ int main(void)
 			}
 		} while (nivel != NIVEL_DIFICIL && nivel != NIVEL_INTERMEDIARIO && nivel != NIVEL_FACIL);
 		
-		// Definindo o numero de tentativas
+		// Definicao o numero de tentativas
 		switch(nivel){
 			case NIVEL_DIFICIL:
 				tentativas = TENTATIVAS_NIVEL_DIFICIL;
